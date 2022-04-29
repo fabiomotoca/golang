@@ -1,0 +1,11 @@
+# Content Fixing
+
+Apr, 28th
+
+- The operator := can only be used when we first declare a variable, after that we should use =
+- A variable can be declared outside a func, but it can't be assigned to a value or we will got an error trying to compile
+- The range operator is a special in the for loop, tells the compiler to iterate over a slice
+- Every variable declared needs to be used otherwise the code won't compile
+- Only the package main will generate an executable
+- The golang has two types of arrays: arrays and slices. Arrays are fixed in size whereas slices can grow and shrink
+
