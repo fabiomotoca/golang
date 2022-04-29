@@ -8,4 +8,5 @@ Apr, 28th
 - Every variable declared needs to be used otherwise the code won't compile
 - Only the package main will generate an executable
 - The golang has two types of arrays: arrays and slices. Arrays are fixed in size whereas slices can grow and shrink
+- In golang we can extend a base type and add some extra functionality to it i.e. type deck []string -- will tell go to create an slice of strings and add a bunch of functions specifically made to work with it
 
