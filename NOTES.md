@@ -12,6 +12,9 @@ Apr, 28th
 
 Apr, 29th
 
-- Change the variable name for the "_" if you intent to not use it, so go compiler stops complain
+- Change the variable name for the "_" if you intend to not use it, so go compiler stops complain
 - Selecting from a slice `cards[startIndexIncluding:upToNotIncluding]`
 - go can return multiple values from a func i.e. `func (d deck, handSize int) (deck, deck)` will return two values of type deck 
+- if the args of a func has the same type we can abbreviate i.e. `func (x, y int)`
+- we can use `defer` in the beginning of a func to do something just before returning the values
+- we can name return values i.e. `func (x, y int) (r1 int, r2 int)`
