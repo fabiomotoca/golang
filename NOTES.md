@@ -10,3 +10,8 @@ Apr, 28th
 - The golang has two types of arrays: arrays and slices. Arrays are fixed in size whereas slices can grow and shrink
 - In golang we can extend a base type and add some extra functionality to it i.e. type deck []string -- will tell go to create an slice of strings and add a bunch of functions specifically made to work with it
 
+Apr, 29th
+
+- Change the variable name for the "_" if you intent to not use it, so go compiler stops complain
+- Selecting from a slice `cards[startIndexIncluding:upToNotIncluding]`
+- go can return multiple values from a func i.e. `func (d deck, handSize int) (deck, deck)` will return two values of type deck 
