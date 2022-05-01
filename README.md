@@ -29,3 +29,21 @@ Update - Apr, 29
 - We can use `defer` in the beginning of a func to do something just before returning the values
 - We can name return values i.e. `func (x, y int) (r1 int, r2 int)`
 - In golang functions are also their own data types i.e. `func test(n int)` && `x := test` && `x(10)`
+
+Update - Apr, 30
+
+- The piece of code below can be used as example for generating a random number with a new `seed` every time that is called:
+
+```go
+func (d deck) shuffle() {
+	for i := range d {
+		source := rand.NewSource(time.Now().UnixNano())
+		r := rand.New(source)
+		newPosition := r.Intn(len(d) - 1)
+		d[i], d[newPosition] = d[newPosition], d[i]
+	}
+
+}
+```
+
+- The basics to write tests in go is to create files with `_test.go` and use `go test` in order to validate or hypothesis
