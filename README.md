@@ -10,17 +10,17 @@
 
 ## Study Notes
 
-Update - Apr, 28
+Update - Apr 28
 
 - The operator := can only be used when we first declare a variable, after that we should use =
-- A variable can be declared outside a func, but it can't be assigned to a value or we will got an error trying to compile
+- A variable can be declared outside a func, but it can't be assigned to a value, or we will get an error trying to compile
 - The range operator is a special in the for loop, tells the compiler to iterate over a slice
 - Every variable declared needs to be used otherwise the code won't compile
 - Only the package main will generate an executable
 - The golang has two types of arrays: arrays and slices. Arrays are fixed in size whereas slices can grow and shrink
 - In golang we can extend a base type and add some extra functionality to it i.e. type deck []string -- will tell go to create an slice of strings and add a bunch of functions specifically made to work with it
 
-Update - Apr, 29
+Update - Apr 29
 
 - Change the variable name for the "_" if you intend to not use it, so go compiler stops complain
 - Selecting from a slice `cards[startIndexIncluding:upToNotIncluding]`
@@ -30,7 +30,7 @@ Update - Apr, 29
 - We can name return values i.e. `func (x, y int) (r1 int, r2 int)`
 - In golang functions are also their own data types i.e. `func test(n int)` && `x := test` && `x(10)`
 
-Update - Apr, 30
+Update - Apr 30
 
 - The piece of code below can be used as example for generating a random number with a new `seed` every time that is called:
 
@@ -47,3 +47,7 @@ func (d deck) shuffle() {
 ```
 
 - The basics to write tests in go is to create files with `_test.go` and use `go test` in order to validate or hypothesis
+
+Update - May 1
+
+- If the functions with names that start with an uppercase letter will be exported to other packages. If the function name starts with a lowercase letter, it won't be exported to other packages, but you can call this function within the same package
