@@ -73,8 +73,24 @@ func main() {
 	fmt.Println(smith)
 }
 ```
-- When initializing variables without values, we got the following by default:
-> string => ""
-> int => 0
-> float => 0
-> bool => false
+- Whatever we're initializing variables without values, we got the following by default:
+	- string = ""
+	- int = 0
+	- float = 0
+	- bool = false
+
+- Structs can also have receivers configured
+- The "&" is an operator where "&variable" will give the memory address of the value this variable is pointing at
+	- Use "&" to point to a memory address
+- The "\*" is also an operator where "\*pointer" will give the value this memory address is pointing at
+	- Use "\*" to point to a memory value
+
+```go
+/*
+	*person = the expression that accepts a pointer to a person
+	(*pointerToPerson) = the actual value of that pointer to a person
+*/
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson.firstName = newFirstName
+}
+```
