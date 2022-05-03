@@ -33,7 +33,6 @@ Update - Apr 29
 Update - Apr 30
 
 - The piece of code below can be used as example for generating a random number with a new `seed` every time that is called:
-
 ```go
 func (d deck) shuffle() {
 	for i := range d {
@@ -51,3 +50,31 @@ func (d deck) shuffle() {
 Update - May 1
 
 - If the functions with names that start with an uppercase letter will be exported to other packages. If the function name starts with a lowercase letter, it won't be exported to other packages, but you can call this function within the same package
+
+Update - May 2
+
+- A `struct` is a data type in golang that is similar to a dict in Python or a plain object in JavaScript
+```go
+package main
+
+import "fmt"
+
+type person struct {
+	firstName string
+	lastName  string
+}
+
+func main() {
+	smith := person{firstName: "Agent", lastName: "Smith"}
+	/* alternatively
+	var smith person
+	
+	*/
+	fmt.Println(smith)
+}
+```
+- When initializing variables without values, we got the following by default:
+> string => ""
+> int => 0
+> float => 0
+> bool => false
