@@ -30,14 +30,18 @@ func main() {
 			zipCode: 94000,
 		},
 	}
-	/* or also works like
+	/* or also it works like below
 	var smith person
 	smith.firstName = "Agent"
 	smith.lastName = "Smith"
 	*/
 
+	p1.updateName("Exile")
+	p1.print()
+	/* or also it works like below
 	p1Pointer := &p1
 	p1Pointer.updateName("Exile")
 	p1.print()
+	*/
 
 }

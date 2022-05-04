@@ -24,7 +24,7 @@ Update - Apr 29
 
 - Change the variable name for the "_" if you intend to not use it, so go compiler stops complain
 - Selecting from a slice `cards[startIndexIncluding:upToNotIncluding]`
-- go can return multiple values from a func i.e. `func (d deck, handSize int) (deck, deck)` will return two values of type deck 
+- go can return multiple values from a func i.e. `func (d deck, handSize int) (deck, deck)` will return two values of type deck
 - If the args of a func has the same type we can abbreviate i.e. `func (x, y int)`
 - We can use `defer` in the beginning of a func to do something just before returning the values
 - We can name return values i.e. `func (x, y int) (r1 int, r2 int)`
@@ -68,7 +68,7 @@ func main() {
 	smith := person{firstName: "Agent", lastName: "Smith"}
 	/* alternatively
 	var smith person
-	
+
 	*/
 	fmt.Println(smith)
 }
@@ -87,10 +87,17 @@ func main() {
 
 ```go
 /*
-	*person = the expression that accepts a pointer to a person
+	*person = the expression that is a pointer to a person
 	(*pointerToPerson) = the actual value of that pointer to a person
 */
 func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson.firstName = newFirstName
 }
 ```
+
+Update - May 4
+
+- Use pointers to change these things in a function
+	- int, float, string, bool, structs
+- Don't worry about pointers with these
+	- slices, maps, channels, pointers, functions
