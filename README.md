@@ -101,3 +101,18 @@ Update - May 4
 	- int, float, string, bool, structs
 - Don't worry about pointers with these
 	- slices, maps, channels, pointers, functions
+- Everything in Go is pass by value
+- Maps vs Structs
+	- Map
+		- All keys must be the same type
+		- All values must be the same type
+		- Keys are indexed - we can iterate over them -
+		- Used to represent a collection of related properties, i.e. A collection of colors and hex values
+		- Don't need to know all the keys at compile time
+		- Reference Type!
+	- Struct
+		- Values can be of different type
+		- Keys don't support indexing
+		- You need to know all the different fields at compile time
+		- Used to represent a "thing" with a lot of different properties, i.e. A customer
+		- Value Type!
