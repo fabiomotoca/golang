@@ -1,3 +1,4 @@
 golang
 args
 func
+bool

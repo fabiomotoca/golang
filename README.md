@@ -116,3 +116,13 @@ Update - May 4
 		- You need to know all the different fields at compile time
 		- Used to represent a "thing" with a lot of different properties, i.e. A customer
 		- Value Type!
+
+Update - May 5
+
+- Interfaces are a tool to reuse code
+- Interfaces are not generic types in go
+	- Other languages have 'generic' types - go does not.
+- Interfaces are 'implicit'
+	- We don't manually have to say that our custom type satisfies some interface
+- Interfaces are a contract to help us manage types
+	- GARBAGE IN > GARBAGE OUT. If our custom type's implementation of a function is broken, so the interfaces won't help us!
